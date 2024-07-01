@@ -1,0 +1,14 @@
+version: "3"
+services:
+  invisor-api:
+    image: verse-ar-api:1.0
+    ports:
+      - "7025:7025" # port yang akan di-expose ke host
+    networks:
+      - niat-yang-suci # nama network yang akan digunakan
+    volumes:
+      - /home/praktikumc/verse-ar:/verse-ar # path dari host ke container
+
+networks:
+  niat-yang-suci:
+    external: true
