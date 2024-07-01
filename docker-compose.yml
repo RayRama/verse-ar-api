@@ -1,6 +1,6 @@
 version: "3"
 services:
-  invisor-api:
+  verse-ar-api:
     image: verse-ar-api:1.0
     ports:
       - "7025:7025" # port yang akan di-expose ke host
